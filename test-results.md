@@ -45,3 +45,14 @@ As of 17th June 2016
       * <img>: **FAIL**
       * CSS background: **FAIL**
       * CSS content: **FAIL**
+  * Opera 37
+    * Raster
+      * Inline SVG: **PASS**
+      * <img>: **FAIL**
+      * CSS background: **FAIL**
+      * CSS content: **FAIL**
+    * Vector
+      * Inline SVG: **PASS**
+      * <img>: **FAIL**
+      * CSS background: **FAIL**
+      * CSS content: **FAIL**
