@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>SVG Embeded Image XLink Tests (Vector)</h1>
+
+<nav>
+<a href="index.html">Raster tests</a>
+<a href="index-vector.html">Vector tests</a>
+</nav>
+
+<section>
+<h2>Source images</h2>
+<p>
+<a href="test.svg">Source graphic</a>
+<br />
+<a href="test-vector.svg">Test image</a>
+</p>
+</section>
+
+<section>
+
+<h2>Inline SVG</h2>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200"><style>.st0{display:none;} .st1{display:inline;} .st2{fill:#991B1E;} .st3{fill:#222222;}</style><g class="st0 st1" id="Layer_1"><path class="st2" d="M0 0h200v200H0z"/><path class="st3" d="M186.4 45L155 13.6l-55 55.1-55-55.1L13.6 45l55.1 55-55.1 55L45 186.4l55-55.1 55 55.1 31.4-31.4-55.1-55z"/></g><image width="833" height="833" xlink:href="tick.svg" transform="matrix(.24 0 0 .24 .04 .04)" overflow="visible" id="Layer_2"/></svg>
+
+</section>
+
+<section>
+
+<h2>Image embedded as &lt;img&gt;</h2>
+
+<img src="test-vector.svg" width="200" height="200" />
+
+</section>
+
+<section>
+
+<h2>Image embedded via CSS background</h2>
+
+<div style="width: 200px; height: 200px; background: url(test-vector.svg) no-repeat center center;"></div>
+
+</section>
+
+<section>
+
+<h2>Image embedded via CSS content attribute</h2>
+
+<style>
+.content-embed {
+	width: 200px;
+	height: 200px;
+	content: url(test-vector.svg);
+}
+</style>
+<div class="content-embed"></div>
+
+</section>
+
+</body>
+</html>

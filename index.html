@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>SVG Embeded Image XLink Tests (Raster)</h1>
+
+<nav>
+<a href="index.html">Raster tests</a>
+<a href="index-vector.html">Vector tests</a>
+</nav>
+
+<section>
+<h2>Source images</h2>
+<p>
+<a href="test.svg">Source graphic</a>
+<br />
+<a href="test-raster.svg">Test image</a>
+</p>
+</section>
+
+<section>
+
+<h2>Inline SVG</h2>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><style>.st0{display:none;} .st1{display:inline;} .st2{fill:#991B1E;} .st3{fill:#222222;} .st4{fill:#0E9948;}</style><g class="st0 st1" id="Layer_1"><path class="st2" d="M0 0h200v200H0z"/><path class="st3" d="M186.4 45L155 13.6l-55 55.1-55-55.1L13.6 45l55.1 55-55.1 55L45 186.4l55-55.1 55 55.1 31.4-31.4-55.1-55z"/></g><g id="Layer_2"><path class="st4" d="M0 0h200v200H0z"/><path class="st3" d="M77.4 110.6L38.7 72 7.4 103.3l70 70L192.6 58l-31.3-31.3z"/></g></svg>
+
+</section>
+
+<section>
+
+<h2>Image embedded as &lt;img&gt;</h2>
+
+<img src="test-raster.svg" width="200" height="200" />
+
+</section>
+
+<section>
+
+<h2>Image embedded via CSS background</h2>
+
+<div style="width: 200px; height: 200px; background: url(test-raster.svg) no-repeat center center;"></div>
+
+</section>
+
+<section>
+
+<h2>Image embedded via CSS content attribute</h2>
+
+<style>
+.content-embed {
+	width: 200px;
+	height: 200px;
+	content: url(test-raster.svg);
+}
+</style>
+<div class="content-embed"></div>
+
+</section>
+
+</body>
+</html>
