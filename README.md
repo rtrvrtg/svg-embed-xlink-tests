@@ -1,4 +1,4 @@
-# SVG Embeded Image XLink Tests
+# SVG Embedded Image XLink Tests
 
 Test cases for xlinked images in embedded SVGs.
 
