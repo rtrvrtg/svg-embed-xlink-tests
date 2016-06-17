@@ -4,8 +4,8 @@ Test cases for xlinked images in embedded SVGs.
 
 ## How to get started
 
-[Raster tests](index.html)
-[Vector tests](index-vector.html)
+[Raster tests](https://rtrvrtg.github.io/svg-embed-xlink-tests/index.html)
+[Vector tests](https://rtrvrtg.github.io/svg-embed-xlink-tests/index-vector.html)
 
 ## How it works
 
